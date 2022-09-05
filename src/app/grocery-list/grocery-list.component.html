@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="element"
+    [ngClass]="getStyle(i)" *ngFor="let groceryItem of shoppingItems; let i = index">
+        Item {{i+1}} :  {{groceryItem.name}} - {{groceryItem.amount}}
+        
+</div>
+  
+    <input type="text" placeholder="Añadir elemento" (keydown)="addElement($event)" [(ngModel)]="itemName">
+    <input type="number" placeholder="Añadir cantidad" (keydown)="addElement($event)" [(ngModel)]="itemAmount">
+    <p *ngIf="itemAmount < 0" class="alert">La cantidad debe ser mayor que 0</p>
+    <button (click)="addElementOnClick()" >Añadir elemento</button>
+

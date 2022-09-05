@@ -1,0 +1,27 @@
+.even {
+    background-color: green;
+    color: white;
+}
+
+.odd {
+    background-color: yellow;
+    color: black;
+}
+
+.max {
+    background-color: red;
+    color: white;
+}
+
+.element {
+    font-size: 22px;
+    padding: 1rem;
+    margin: 2px;
+}
+
+.alert {
+    font-size: 12px;
+
+    background-color: red;
+    color: white;
+}
