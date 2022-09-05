@@ -1,0 +1,8 @@
+<div class="container" [ngStyle]="{'background-color': backgroundColor, 'font-size' : defaultFont}" (mouseenter)="increaseFont()" (mouseleave)="decreaseFont()">
+    <div class="text" [ngStyle]="{'background-color': bg1}">Hola Clase qué tal?</div>
+    <div class="text" [ngStyle]="{'background-color': bg2, 'font-size': superFont}" (mouseenter)="increaseSuperFont()" (mouseleave)="decreaseSuperFont()">Hola Clase qué tal?</div>
+    <div class="text" [ngStyle]="{'background-color': bg3}">Hola Clase qué tal?</div>
+</div>
+<div class="button-container">
+    <button (click)="changeBackgroundColor()" class="btn">Cambiar fondo</button>
+</div>
